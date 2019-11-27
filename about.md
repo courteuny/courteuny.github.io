@@ -4,7 +4,10 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  안녕하세요, 자연어 처리에 관심을 가지고 공부하고 있는 김은서 입니다.
+  한국외국어대학교에서 영어통번역(EICC)과 언어와공학 전공을 이수하고 있습니다.
+  Hi, I'm Eunseo Courtney Kim. 
+  I am an undergraduate student in Korea interested in Natural Language Processing. 
 </p>
 
 In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
