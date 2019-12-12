@@ -5,7 +5,7 @@
 
 첫 주차에는 텍스트를 벡터로 변환하는 방법, 텍스트 데이터 처리 프레임워크, 기본적인 KoNLPy 사용 방법과 n-gram 추출에 대해 배웠습니다.
 
-# from Text to Vector
+# # from Text to Vector
 
 ## Vector space representation
 데이터를 벡터로 표현하는 방법에는 여러가지가 있습니다.
@@ -13,11 +13,11 @@ Vector representation을 하는 이유는,
 - 많은 머신러닝 알고리즘이 벡터공간 내에서 작동하도록 설계되어있기 때문에
 - 텍스트 데이터를 알고리즘이 인식할 수 있는 현태로 변환하기 위해서 (one hot / distributed , sparse / dense 등)
 
-* Bag of Words model : one-hot representation으로, 문서 내에서 한 단어의 빈도수 (=중요도) 를 의미하는 (row, column)으로 구성됩니다.
+1. Bag of Words model : one-hot representation으로, 문서 내에서 한 단어의 빈도수 (=중요도) 를 의미하는 (row, column)으로 구성됩니다.
 이 때, column의 개수는 전체 문서에 등장한 unique한 단어의 수로, 크기가 매우 크며 이 중에서 한 문서에 나오는 단어의 개수는 적기 때문에 대부분 0의 값을 가집니다. 이를 sparse vector 라고 부릅니다.
 한 문서 내의 단어를 쉽게 확인할 수 있다는 장점이 있는 반면 모든 단어가 다르게 취급되기 때문에 단어간의 유사성을 표현하기에 적합하지 않습니다.
 
-* Distributed representation : 한 단어나 문서를 d차원 공간의 벡터로 표현합니다. (ex.Word2Vec)
+2. Distributed representation : 한 단어나 문서를 d차원 공간의 벡터로 표현합니다. (ex.Word2Vec)
 이 때 벡터 공간은 단어의 의미가 얼마나 유사한지를 반영하며, 벡터 공간 속에서 거리가 가까운 단어/문서는 의미가 비슷함을 의미합니다. ('비슷함'의 정의는 모두 다름) 하나의 단어를 벡터로 변환한 값은 의미 공간 속에서 좌표값의 역할을 합니다.
 
 ## Document Clustering
@@ -26,155 +26,18 @@ Vector representation을 하는 이유는,
 
 * 유클리드(Euclidean) 거리 : 유클리드 거리는 두 벡터가 다른 좌표를 가질 때 두 점 사이의 거리를 계산합니다. 
 <p>
-<img src = "https://miro.medium.com/max/685/0*8dEVqNmYeB_yns2c.gif"></img>
+<img src = "https://miro.medium.com/max/685/0*8dEVqNmYeB_yns2c.gif">
 </p>
 유클리드 거리는 문서의 길이 (=백터의 크기)에 영향을 받기 때문에, 두 문서의 방향이 비슷해도 단어의 개수가 다르면 거리가 먼 것으로 계산됩니다.
 
-* 코사인(Cosine) 거리 : 코사인 유사도는 두 벡터 간의 코사인 각도를 이용하여 얼마나 유사한지르 계산합니다. 
+* 코사인(Cosine) 거리 : 코사인 유사도는 두 벡터 간의 코사인 각도를 이용하여 얼마나 유사한지를 계산합니다. 
 <p>
-<img src = "https://wikidocs.net/images/page/24603/%EC%BD%94%EC%82%AC%EC%9D%B8%EC%9C%A0%EC%82%AC%EB%8F%84.PNG"></img>
+<img src = "https://wikidocs.net/images/page/24603/%EC%BD%94%EC%82%AC%EC%9D%B8%EC%9C%A0%EC%82%AC%EB%8F%84.PNG">
+</p>
+<p>
+<img src = "https://mblogthumb-phinf.pstatic.net/20130527_12/jevida_13696599944081VpIt_PNG/3.png?type=w2"></p>img>
 </p>
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-  <mi>s</mi>
-  <mi>i</mi>
-  <mi>m</mi>
-  <mi>i</mi>
-  <mi>l</mi>
-  <mi>a</mi>
-  <mi>r</mi>
-  <mi>i</mi>
-  <mi>t</mi>
-  <mi>y</mi>
-  <mo>=</mo>
-  <mi>c</mi>
-  <mi>o</mi>
-  <mi>s</mi>
-  <mo stretchy="false">(</mo>
-  <mrow class="MJX-TeXAtom-ORD">
-    <mo>&#x398;</mo>
-  </mrow>
-  <mo stretchy="false">)</mo>
-  <mo>=</mo>
-  <mfrac>
-    <mrow>
-      <mi>A</mi>
-      <mo>&#x22C5;</mo>
-      <mi>B</mi>
-    </mrow>
-    <mrow>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-      <mi>A</mi>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-      <mtext>&#xA0;</mtext>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-      <mi>B</mi>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-      <mrow class="MJX-TeXAtom-ORD">
-        <mo stretchy="false">|</mo>
-      </mrow>
-    </mrow>
-  </mfrac>
-  <mo>=</mo>
-  <mfrac>
-    <mrow>
-      <munderover>
-        <mo>&#x2211;<!-- ∑ --></mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mi>i</mi>
-          <mo>=</mo>
-          <mn>1</mn>
-        </mrow>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mi>n</mi>
-        </mrow>
-      </munderover>
-      <mrow class="MJX-TeXAtom-ORD">
-        <msub>
-          <mi>A</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>i</mi>
-          </mrow>
-        </msub>
-        <mo>&#xD7;</mo>
-        <msub>
-          <mi>B</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>i</mi>
-          </mrow>
-        </msub>
-      </mrow>
-    </mrow>
-    <mrow>
-      <msqrt>
-        <munderover>
-          <mo>&#x2211;<!-- ∑ --></mo>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>i</mi>
-            <mo>=</mo>
-            <mn>1</mn>
-          </mrow>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>n</mi>
-          </mrow>
-        </munderover>
-        <mo stretchy="false">(</mo>
-        <msub>
-          <mi>A</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>i</mi>
-          </mrow>
-        </msub>
-        <msup>
-          <mo stretchy="false">)</mo>
-          <mn>2</mn>
-        </msup>
-      </msqrt>
-      <mo>&#xD7;</mo>
-      <msqrt>
-        <munderover>
-          <mo>&#x2211;<!-- ∑ --></mo>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>i</mi>
-            <mo>=</mo>
-            <mn>1</mn>
-          </mrow>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>n</mi>
-          </mrow>
-        </munderover>
-        <mo stretchy="false">(</mo>
-        <msub>
-          <mi>B</mi>
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi>i</mi>
-          </mrow>
-        </msub>
-        <msup>
-          <mo stretchy="false">)</mo>
-          <mn>2</mn>
-        </msup>
-      </msqrt>
-    </mrow>
-  </mfrac>
-</math>
 유클리드 거리와 달리 문서의 크기에 영향을 받지 않으며, 두 문서에서 공통으로 등장하는 단어에 대해서만 유사성을 판단하기 때문에 Bag of Words 모델에서는 코사인이 더 적절합니다.
 마찬가지로, distributed representation을 이용하거나 logistic regression, nerual network 등의 머신러닝 알고리즘에서도 벡터의 방향이 더욱 중요하합니다.
 
@@ -200,15 +63,19 @@ Classification은 데이터의 클래스를 구분하며 어떤 그룹에 속하
 
 3. Part-of-Speech tagging
 - 품사 판별이란 주어진 단어의 품사를 구분하는 작업입니다.
-> [토크나이징, 은, 어절, 에서, 단어,를, 나누는, 것, 입니다] 
+
+> [토크나이징, 은, 어절, 에서, 단어,를, 나누는, 것, 입니다]
+
 > [ (토크나이징, 명사), (은, 조사), (어절, 명사), (에서, 조사), (단어, 명사), (를, 조사), (나누는, 동사), (것, 명사), (입니다, 형용사) ]
 
 4. Morphological analysis
 - 단어의 형태소를 인식하는 작업입니다.
 - 형태소는 단어를 구성하는 최소 단위이며, 품사와는 구분되어 쓰입니다.
-> 품사 판별: "입니다"  형용사
+
+> 품사 판별: "입니다" -> 형용사
+
 > 형태소 분석: "입니다"
-	 이/형용사어근 + ㅂ니다/어미
+	-> 이/형용사어근 + ㅂ니다/어미
 - 형태소 분석을 바탕으로 단어의 품사를 추청할 수 있습니다.
 
 5. Stopwords removal
@@ -224,15 +91,18 @@ Classification은 데이터의 클래스를 구분하며 어떤 그룹에 속하
 * TF-IDF는 information rertrieval, 정보 검색을 위해 제안된 term weighting입니다.
 	* 흔하게 등장하는 단어의 영향력을 줄입니다.
 <p>
-<img src="http://www.bloter.net/wp-content/uploads/2016/09/td-idf-graphic-800x266.png"></img>
+<img src="http://www.bloter.net/wp-content/uploads/2016/09/td-idf-graphic-800x266.png">
 </p>
-여기서 tf(x,y)는 문서y 내에서 단어x의 빈도수를 나타내며, df(x)는 단어x를 포함하는 문서의 개수, 그리고 N은 전제 문서의 개수를 의미합니다.
+여기서 tf(x,y)는 문서y 내에서 단어x의 빈도수를 나타내며, 
+df(x)는 단어x를 포함하는 문서의 개수, 그리고 N은 전제 문서의 개수를 의미합니다.
 만약 총 100개의 문서에서 하나의 단어가 공통으로 100개의 문서에 전부 등장했다면, df(x) = N이 되어 log1의 값인 0이 곱해져 그 단어는 정보력이 없다고 판단됩니다.
 - 따라서, Document frequency가 큰 단어는 정보력이 적습니다. 이는 세 가지 경우를 뜻하는데요,
 	- 어디에나 등장하는 것은 정보력이 없으며,
 	- 주로 조사와 같이 무의미하거나 문법적인 역할을 하고,
 	- 흔하게 등장하기 때문에 문서 간 거리를 계산할 때에도 무시할 수 있습니다.
-![Alt text](C:\Users\Administrator\Desktop\termvector.png)
+<p>
+<img src ="C:\Users\Administrator\Desktop\termvector.png">
+</p>
 
 # KoNLPy 사용하기
 KoNLPy로 품사 판별이나 형태소 분석을 할 수 있습니다.
@@ -253,11 +123,15 @@ print(kkma.nouns(u'질문이나 건의사항은 깃헙 이슈 트래커에 남�
 > ex) 재수강하겠어
 	* 형태소분석: [재/관형사 + 수강/명사 + 하/동사 + 겠/선어말어미 + 어/어말어미]
 	* 품사판별 : [재수강/명사 + 하겠어/동사]
+
 - 형태소 분석은 단어를 구성하는 요소들을 분해하여 인식하는 과정이므로 품사 판별을 위해 형태소 분석이 이용될 수도 있습니다.
+
 > ex) 재공연을 했어요
 	품사: (재공연, 명사), (을, 조사), (했어요, 동사)
 	형태소: (재, 관형사), (공연, 명사), (을, 조사), (하, 동사), (었, 선어말어미), (어요, 종결어미)
+
 - 한글은 표의문자로 봐도 무방할 정도로 음절마다 의미를 지니는 경우가 많습니다. 특히 신조어 명사의 경우 부분 음절들이 단어이며 뜻을 가집니다. 
 형태소 분석기 입장에서는 모르는 단어를 그대로 두는 것보다 아는 단어들로 분해하려는 경향이 있기 때문에, 분석할 데이터에 맞추어 적절한 단어 사전을 구축하는 것이 도움이 됩니다.
+
 > 노래 제목 신조어의 경우:
 	너무/MAG, 너무너무/MAG, 는/JX, 아이오/NNG, 아이/NNG, 의/JKG, 노래/NNG, 에/JKM, 요/JX
