@@ -104,7 +104,7 @@ df(x)는 단어x를 포함하는 문서의 개수, 그리고 N은 전제 문서�
 <img src ="C:\Users\Administrator\Desktop\termvector.png">
 </p>
 
-# KoNLPy 사용하기
+# # KoNLPy 사용하기
 KoNLPy로 품사 판별이나 형태소 분석을 할 수 있습니다.
 
 ```python
