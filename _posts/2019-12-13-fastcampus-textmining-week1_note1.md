@@ -35,11 +35,11 @@ Vector representation을 하는 이유는,
 <img src = "https://wikidocs.net/images/page/24603/%EC%BD%94%EC%82%AC%EC%9D%B8%EC%9C%A0%EC%82%AC%EB%8F%84.PNG">
 </p>
 <p>
-<img src = "https://mblogthumb-phinf.pstatic.net/20130527_12/jevida_13696599944081VpIt_PNG/3.png?type=w2">
+<img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/2a8c50526e2cc7aa837477be87eff1ea703f9dec">
 </p>
 
 유클리드 거리와 달리 문서의 크기에 영향을 받지 않으며, 두 문서에서 공통으로 등장하는 단어에 대해서만 유사성을 판단하기 때문에 Bag of Words 모델에서는 코사인이 더 적절합니다.
-마찬가지로, distributed representation을 이용하거나 logistic regression, nerual network 등의 머신러닝 알고리즘에서도 벡터의 방향이 더욱 중요하합니다.
+마찬가지로, distributed representation을 이용하거나 logistic regression, nerual network 등의 머신러닝 알고리즘에서도 벡터의 방향이 더욱 중요합니다.
 
 # Document classification
 Classification은 데이터의 클래스를 구분하며 어떤 그룹에 속하는지 판별하는 작업입니다. 예를 들어, 어떤 영화에 대한 평가가 positive한 것인지 negative한 것인지 이진 분류하는 작업을 할 수 있습니다.
