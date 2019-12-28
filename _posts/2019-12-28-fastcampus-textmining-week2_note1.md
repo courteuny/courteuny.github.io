@@ -24,7 +24,6 @@
 키워드간 상관성을 표현하는 index입니다.
 <p>
 <img src = 'https://patentimages.storage.googleapis.com/07/b8/a8/3a125e705b079e/PCTKR2015012704-appb-M000001.png'
-<\p>
 
 - 서로 독립인지 판단할 수 있으며, 
 - 로그를 사용하여 양/음 상관성을 판단합니다
