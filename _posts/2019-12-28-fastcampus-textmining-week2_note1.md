@@ -14,16 +14,20 @@
 
 ### 상대적 출현을 이용한 키워드 추출
 - 한 단어를 기준으로 *관심있는 문서 집합* 에서의 단어 등장 비율과 *비교대상 문서 집합* 에서의 등장 비율을 이용해 키워드 점수를 정의합니다.
+
 <p>
- <img src = 'https://user-images.githubusercontent.com/52257022/71542505-976e7880-29aa-11ea-85a6-9dd04901a5dd.png'>
+<img src = 'https://user-images.githubusercontent.com/52257022/71542505-976e7880-29aa-11ea-85a6-9dd04901a5dd.png'>
+<\p>
 
 - 여기서 제안된 점수는 (0,1) 사이의 keyword score를 가집니다. 0.5 정도의 score를 가질 때에는 키워드가 아니라고 판단할 수 있는데, 그 이유는 두 개의 문서가 뒤바뀌어도 영향이 없기 때문입니다. score가 0.5~1 사이 될수록 키워드로서의 영향력이 높다고 할 수 있습니다.
 
 
 ### PMI (point mutual information)
 키워드간 상관성을 표현하는 index입니다.
+
 <p>
-  <img src = 'https://patentimages.storage.googleapis.com/07/b8/a8/3a125e705b079e/PCTKR2015012704-appb-M000001.png'>
+<img src = 'https://patentimages.storage.googleapis.com/07/b8/a8/3a125e705b079e/PCTKR2015012704-appb-M000001.png'>
+<\p>
 
 - 서로 독립인지 판단할 수 있으며, 
 - 로그를 사용하여 양/음 상관성을 판단합니다
