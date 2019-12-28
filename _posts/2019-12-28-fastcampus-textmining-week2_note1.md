@@ -20,9 +20,8 @@
 
 여기서 제안된 점수는 (0,1) 사이의 keyword score를 가집니다. 0.5 정도의 score를 가질 때에는 키워드가 아니라고 판단할 수 있는데, 그 이유는 두 개의 문서가 뒤바뀌어도 영향이 없기 때문입니다. score가 0.5~1 사이 될수록 키워드로서의 영향력이 높다고 할 수 있습니다.
 
-
 ### PMI (point mutual information)
-키워드간 상관성을 표현하는 index입니다.
+- 키워드간 상관성을 표현하는 index입니다.
 
 <p>
 <img src = 'https://patentimages.storage.googleapis.com/07/b8/a8/3a125e705b079e/PCTKR2015012704-appb-M000001.png'>
