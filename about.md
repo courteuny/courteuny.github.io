@@ -1,10 +1,10 @@
-# Courtney Eunseo Kim
+# About Courtney Eunseo Kim
 
 ---
 
 <p>
   <img src ='https://www.notion.so/Courtney-Eunseo-Kim-eb8ed39211324d28ada046b9fab5b55b#341424bb539240f880a91affb675a46f'>
-  </p>
+ </p>
   
 # Profile
 
@@ -39,7 +39,6 @@
 
 - ***Bachelor of Language Technology** in Language and Technology*
 - ***Bachelor of Arts** in **EICC,** translation and interpreting studies*
-- ***Cumulative GPA**: 🤒*
 
 # Extracurricular Activities - IT
 
@@ -47,22 +46,22 @@
 
 ***Dec 2019 ~ Feb 2020***
 
-***Aug 2019 ~ Nov 2019***
-
-***Feb 2019 ~ June 2019***
-
-***June 2018 ~ Dec 2018***
-
 - **Machine learning camp** for text data analysis (FastCampus)
 - Learned about machine learning mechanism in terms of vector representation, as well as real-life tasks.
 - Attended 10-week sessions that covered a lot of NLP topics from tokenizing to attention based sentence classifiers. (the class notes can be found at my [blog)](http://courteuny.github.io)
 
+***Aug 2019 ~ Nov 2019***
+
 - **Expertise Course for Big Data Analysis** (Seoul Business Agency)
 - Learned software often used in Big Data analysis such as Python, R, Linux and Hadoop
+
+***Feb 2019 ~ June 2019***
 
 - **KUSITMS** (Korean University Students' IT & Management Society)
 - Attended weekly discussion and study sessions on diverse IT topics
 - Had a team project and won the 2nd place on the topic 'designing business models based on IT'
+
+***June 2018 ~ Dec 2018***
 
 - **ADD:ICT** (IT study club within HUFS)
 - Attended weekly sessions on IT trends
@@ -89,8 +88,8 @@
 
 ---
 
-- **Programming Language**:  ***Python**, R*
-- **Libraries**:  *KoNLPy, **soyNLP***
+- **Programming Language**:  **Python**, R
+- **Libraries**:  *KoNLPy, **soyNLP**
 - **Development Framework**:  ☺️
 
 # Learning Workspace
