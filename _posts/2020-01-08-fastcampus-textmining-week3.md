@@ -92,15 +92,14 @@
 ## 7. Ensemble tree
 - bagging (Bootstrap AGGregatING) 과 boosting이 있습니다.
 
-### Bagging
+#### Bagging
 - 각 모델들이 과적합 되어있을 때 학습 성능이 뛰어날 경우 노이즈까지도 패턴으로 학습되지만, 이들 예측값의 평균은 과적합이 적을 가능성이 있다는 점에 주목합니다.
 - 여러 개의 모델을 겹겹이 쌓아 정밀한 decision 단면을 학습합니다. 
 - 변별력이 높은 변수에만 집중될 때에는 해당 변수를 제외하고 모델마다 서로 다른 변수를 이용하도록 한뒤 종합할 수 있습니다. (feature bagging)
 * out of bag error
 - Random forest에서 변수의 중요도를 측정하는 방법으로, 변수 하나를 망치고 perturbation (에러 평균)을 취해서 예측값이 흔들리지 확인합니다.
 
-
-## Boosting
+#### Boosting
 - 과적합된 모델을 종합하여 대체적인, 안정적 예측을 하고 residual(나머지 부분)을 해결할 수 있는 모델을 하나씩 더해가는 방법입니다.
 𝑦 = 𝑓1 𝑥 + 𝑒1
 𝑒1 = 𝑓2 𝑥 + 𝑒2
@@ -118,7 +117,7 @@ XGBoost를 더 경량, 고도화한 gradient boosting입니다.
 매 base model 마다 gradient 기반으로 학습데이터를 샘플링합니다.
 Exclusive Feature Bundling 이라는 방법을 이용하여 features 의 개수도 줄여 효율적으로 모델을 학습합니다. 비슷한 정확도에 훨씬 빠른 학습 시간을 보입니다.
 
-## Evaluation measurement
+## 8. Evaluation measurement
 1. precision
 2. recall : 실제로 얼마나 positive로 예측되었는지에 대한 비율입니다. (recall 높이려면 전부 positive로 계산하면 되고, 동시에 precision이 내려감. precision과 역관계)
 -> 둘을 같이 생각하는게 좋음
@@ -128,7 +127,7 @@ Exclusive Feature Bundling 이라는 방법을 이용하여 features 의 개수�
 <img src = 'https://user-images.githubusercontent.com/52257022/71985282-a6d4a800-326d-11ea-94ea-0e62d15458ad.png'>
 </p>
 
-## Summary
+## Summary ☺
 - Classifiers 는 input 𝑥 를 이용하여 label 𝑦 를 분류하는 패턴을 학습합니다.
 - 벡터 공간 𝑥 에 선형 (linear) 경계선을 그어 레이블을 판별합니다.
 - 선형으로 분류가 어렵다면 input 을 분류가 쉬운 (linear separable) 공간의 벡터로
