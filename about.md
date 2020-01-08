@@ -1,7 +1,9 @@
-Courtney Eunseo Kim
-
+---
+layout: page
+title: About
 ---
 
+# About Courtney Eunseo Kim
 
 <p>
   <img src ='https://user-images.githubusercontent.com/52257022/71989294-c0c5b900-3274-11ea-8a67-93e109bc4f18.png'>
