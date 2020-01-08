@@ -1,7 +1,7 @@
 텍스트 분석을 위한 머신러닝 week2
 ==============
 
-2주차 수업에서는 키워드 추출을 위한 방법들인 PMI와 n-gram extraction, 그리고 여러가지 clustering에 대해 배습니다.
+2주차 수업에서는 키워드 추출을 위한 방법들인 PMI와 n-gram extraction, 그리고 여러가지 clustering에 대해 배웠습니다.
 
 # # Keyword Extraction
 ## What IS a keyword?
