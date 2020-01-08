@@ -15,7 +15,7 @@ title: About Courtney Eunseo Kim
 - **[Facebook](https://www.facebook.com/courtneyykim)**, **[LinkedIn](http://linkedin.com/in/eunseo-kim-444b9a175)**
 - **Language**:
     - *Native in **Korean***
-    - Advanced *in **English***
+    - *Advanced in **English***
 
 # About
 
