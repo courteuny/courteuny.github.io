@@ -84,7 +84,3 @@ title: About Courtney Eunseo Kim
 - **Programming Language**:  **Python**, R
 - **Libraries**:  *KoNLPy, **soyNLP**
 - **Development Framework**:  ☺️
-
-# Learning Workspace
-
----
