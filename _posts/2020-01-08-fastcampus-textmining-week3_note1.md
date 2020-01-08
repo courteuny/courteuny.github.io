@@ -81,13 +81,13 @@
 </p>
 
 * Decision Tree 사용의 장점:
-- 텍스트 분석 이외의 태스크에서는 좋은 성능을 내는 경우가 많습니다. 
-- 변수를 독립적으로 보기 때문에 scaling이나 missing value등에 영향을 적게 받습니다.
-- ifelse 룰로 표현되어, 해석이 용이한 규칙이 도출됩니다.
+  - 텍스트 분석 이외의 태스크에서는 좋은 성능을 내는 경우가 많습니다. 
+  - 변수를 독립적으로 보기 때문에 scaling이나 missing value등에 영향을 적게 받습니다.
+  - ifelse 룰로 표현되어, 해석이 용이한 규칙이 도출됩니다.
 * Decision Tree 사용의 단점:
-- 노이즈와 데이터의 분포에 민감합니다.
-- logistic regression은 사선으로 표현될 수 있지만 decision tree는 비선형 관계를 표현하기 위해 나무의 깊이가 깊어져야 하므로 비효율적일 수 있습니다. (overfitting의 가능성이 있기 때문에 최대 깊이를 사전에 지정하므로써 일종의 regularization이 가능)
-- 문서 분류의 핵심은 특정 단어가 등장 했는가이기 때문에 decision tree가 추구 방향과 다릅니다.
+  - 노이즈와 데이터의 분포에 민감합니다.
+  - logistic regression은 사선으로 표현될 수 있지만 decision tree는 비선형 관계를 표현하기 위해 나무의 깊이가 깊어져야 하므로 비효율적일 수 있습니다. (overfitting의 가능성이 있기 때문에 최대 깊이를 사전에 지정하므로써 일종의 regularization이 가능)
+  - 문서 분류의 핵심은 특정 단어가 등장 했는가이기 때문에 decision tree가 추구 방향과 다릅니다.
 
 ## 7. Ensemble tree
 - bagging (Bootstrap AGGregatING) 과 boosting이 있습니다.
@@ -102,24 +102,21 @@
 
 ## Boosting
 - 과적합된 모델을 종합하여 대체적인, 안정적 예측을 하고 residual(나머지 부분)을 해결할 수 있는 모델을 하나씩 더해가는 방법입니다.
-• 𝑦 = 𝑓1 𝑥 + 𝑒1
-• 𝑒1 = 𝑓2 𝑥 + 𝑒2
-• 𝑒2 = 𝑓3 𝑥 + 𝑒3
+𝑦 = 𝑓1 𝑥 + 𝑒1
+𝑒1 = 𝑓2 𝑥 + 𝑒2
+𝑒2 = 𝑓3 𝑥 + 𝑒3
 -> 𝑦 = 𝑓1 𝑥 + 𝑓2 𝑥 + 𝑓3 𝑥 + 𝑒3
 
 * Adaptive boosting
-- 각 모델마다 학습 데이터의 중요도를 다르게 정의하여 모든 데이터를 학습에 이용하되 몇몇 데이터 포인트들의 loss를 더 중요하게 취급하여 해당 점들을 잘 맞추는 모델을 학습하고, 이를 합쳐 최종 예측을 합니다.
+각 모델마다 학습 데이터의 중요도를 다르게 정의하여 모든 데이터를 학습에 이용하되 몇몇 데이터 포인트들의 loss를 더 중요하게 취급하여 해당 점들을 잘 맞추는 모델을 학습하고, 이를 합쳐 최종 예측을 합니다.
 
 * XGBoost
-- 데이터 가중치를 계산하는 방식에 gradient를 이용하는 gradient boosting의 계산 과정을 발전시킨 모델입니다.
-- XGBoost에서 사용하는 모델은 leaf node에 클래스 가중치를 부가하는 의사결정나무입니다.
+데이터 가중치를 계산하는 방식에 gradient를 이용하는 gradient boosting의 계산 과정을 발전시킨 모델입니다. XGBoost에서 사용하는 모델은 leaf node에 클래스 가중치를 부가하는 의사결정나무입니다.
 
 * LightGBM
-- XGBoost를 더 경량, 고도화한 gradient boosting입니다. 
-- 매 base model 마다 gradient 기반으로 학습데이터를 샘플링합니다.
-- Exclusive Feature Bundling 이라는 방법을 이용하여 features 의 개수도 줄여
-효율적으로 모델을 학습합니다.
--  비슷한 정확도에 훨씬 빠른 학습 시간을 보입니다.
+XGBoost를 더 경량, 고도화한 gradient boosting입니다. 
+매 base model 마다 gradient 기반으로 학습데이터를 샘플링합니다.
+Exclusive Feature Bundling 이라는 방법을 이용하여 features 의 개수도 줄여 효율적으로 모델을 학습합니다. 비슷한 정확도에 훨씬 빠른 학습 시간을 보입니다.
 
 ## Evaluation measurement
 1. precision
@@ -132,10 +129,10 @@
 </p>
 
 ## Summary
-• Classifiers 는 input 𝑥 를 이용하여 label 𝑦 를 분류하는 패턴을 학습합니다.
-• 벡터 공간 𝑥 에 선형 (linear) 경계선을 그어 레이블을 판별합니다.
-• 선형으로 분류가 어렵다면 input 을 분류가 쉬운 (linear separable) 공간의 벡터로
+- Classifiers 는 input 𝑥 를 이용하여 label 𝑦 를 분류하는 패턴을 학습합니다.
+- 벡터 공간 𝑥 에 선형 (linear) 경계선을 그어 레이블을 판별합니다.
+- 선형으로 분류가 어렵다면 input 을 분류가 쉬운 (linear separable) 공간의 벡터로
 변형합니다. 그 결과 원 공간에서는 비선형의 경계선이 학습됩니다.
-• 텍스트 마이닝 문제 중에는 선형 모형으로 풀 수 있는 경우가 많습니다.
-• 문서 분류에 가장 중요한 정보는 '어떤 단어 (or n-gram) 이 존재하는가' 입니다.
-• Bigram + Logistic regression / Naïve Bayes 는 문서 분류에 있어 기본이 되는 모델입니다.
+- 텍스트 마이닝 문제 중에는 선형 모형으로 풀 수 있는 경우가 많습니다.
+- 문서 분류에 가장 중요한 정보는 '어떤 단어 (or n-gram) 이 존재하는가' 입니다.
+- Bigram + Logistic regression / Naïve Bayes 는 문서 분류에 있어 기본이 되는 모델입니다.
