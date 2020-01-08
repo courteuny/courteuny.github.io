@@ -3,7 +3,7 @@
 ---
 
 <p>
-  <img src ='https://www.notion.so/Courtney-Eunseo-Kim-eb8ed39211324d28ada046b9fab5b55b#341424bb539240f880a91affb675a46f'>
+  <img src ='https://user-images.githubusercontent.com/52257022/71989294-c0c5b900-3274-11ea-8a67-93e109bc4f18.png'>
  </p>
   
 # Profile
@@ -18,21 +18,17 @@
 
 # About
 
----
-
 - Main interests are **Natural Language Processing**, **Digital Transformation** and **Translation & Interpretation studies.**
 - Positive learner with an understanding personality and good communication skills.
 
 # Education
-
----
 
 ***Feb 2017 - Aug 2021***
 
 *Seoul, South Korea*
 
 <p>
-  <img src ='https://www.notion.so/Courtney-Eunseo-Kim-eb8ed39211324d28ada046b9fab5b55b#aa6f25e2c4144927a435a2f1003cdcbe'>
+  <img src ='https://user-images.githubusercontent.com/52257022/71989283-bc010500-3274-11ea-99f7-763f97000196.png'>
   </p>
   
 **[Hankuk University of Foreign Studies](http://www.hufs.ac.kr/)**
@@ -41,8 +37,6 @@
 - ***Bachelor of Arts** in **EICC,** translation and interpreting studies*
 
 # Extracurricular Activities - IT
-
----
 
 ***Dec 2019 ~ Feb 2020***
 
@@ -85,8 +79,6 @@
 - Communicated with the teachers to deliver comments and feedback from students.
 
 # Skills
-
----
 
 - **Programming Language**:  **Python**, R
 - **Libraries**:  *KoNLPy, **soyNLP**
