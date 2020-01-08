@@ -2,14 +2,16 @@
 
 ---
 
-![Courtney%20Eunseo%20Kim/8DC6798E-1730-4C39-86A6-C3823251BF11.jpeg](Courtney%20Eunseo%20Kim/8DC6798E-1730-4C39-86A6-C3823251BF11.jpeg)
-
+<p>
+  <img src ='https://www.notion.so/Courtney-Eunseo-Kim-eb8ed39211324d28ada046b9fab5b55b#341424bb539240f880a91affb675a46f'>
+  </p>
+  
 # Profile
 
 - ***e-mail**: keshsk35@gmail.com*
 - ***Blog***: [https://courteuny.github.io](https://courteuny.github.io)
 - ***Github***: [https://github.com/courteuny](https://github.com/courteuny)
-- ***[Facebook](https://www.facebook.com/courtneyykim)**, **[LinkedIn](http://linkedin.com/in/eunseo-kim-444b9a175)***
+- **[Facebook](https://www.facebook.com/courtneyykim)**, **[LinkedIn](http://linkedin.com/in/eunseo-kim-444b9a175)**
 - **Language**:
     - *Native in **Korean***
     - Advanced *in **English***
@@ -29,8 +31,10 @@
 
 *Seoul, South Korea*
 
-![Courtney%20Eunseo%20Kim/Untitled.png](Courtney%20Eunseo%20Kim/Untitled.png)
-
+<p>
+  <img src ='https://www.notion.so/Courtney-Eunseo-Kim-eb8ed39211324d28ada046b9fab5b55b#aa6f25e2c4144927a435a2f1003cdcbe'>
+  </p>
+  
 **[Hankuk University of Foreign Studies](http://www.hufs.ac.kr/)**
 
 - ***Bachelor of Language Technology** in Language and Technology*
