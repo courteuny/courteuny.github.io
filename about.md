@@ -33,7 +33,7 @@ title: About Eunseo Courtney Kim
   
 **[Hankuk University of Foreign Studies Graduate School of Interpretation and Translation](http://builder.hufs.ac.kr/user/gsit3/)**
 
-- ***Master of Arts** in **Korean-English Interpretion and Translation** *
+- ***Master of Arts** in **Korean-English Interpretion and Translation*** 
 
 
 
@@ -49,7 +49,7 @@ title: About Eunseo Courtney Kim
 
 
 - ***Bachelor of Arts** in **EICC,** translation and interpreting studies*
-- ***Bachelor of Language and Technology** in ** language and technology*
+- ***Bachelor of Language and Technology** in language and technology*
 
 
 # Experiences - Translation and Interpretation
