@@ -18,8 +18,8 @@ title: About Eunseo Courtney Kim
 
 # About
 
+- Interpreter with great communication skills and thorough understanding in artificial intelligence.
 - Main interests are **Korean-English Interpretation and Translation**, **Natural Language Processing**, and **Digital Transformation** 
-- Interpreter with an understanding personality and good communication skills.
 
 # Education
 
@@ -33,7 +33,8 @@ title: About Eunseo Courtney Kim
   
 **[Hankuk University of Foreign Studies Graduate School of Interpretation and Translation](http://builder.hufs.ac.kr/user/gsit3/)**
 
-- ***Master of Arts** in **Korean-English Interpretion and Translation**
+- ***Master of Arts** in **Korean-English Interpretion and Translation** *
+
 
 
 ***Mar 2017 - Aug 2021***
@@ -51,7 +52,7 @@ title: About Eunseo Courtney Kim
 - ***Bachelor of Language and Technology** in ** language and technology*
 
 
-# Experience - Translation and Interpreting
+# Experiences - Translation and Interpretation
 
 ***Sep 2019*** 
 
@@ -69,7 +70,7 @@ title: About Eunseo Courtney Kim
 - Held spoken tests and measured students' proficiency in English, and dealt with translation tasks within the centre.
 - Communicated with the teachers to deliver comments and feedback from students.
 
-# Experience - IT
+# Experiences - IT
 
 ***Dec 2019 ~ Feb 2020***
 
