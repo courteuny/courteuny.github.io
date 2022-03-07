@@ -52,7 +52,7 @@ title: About Eunseo Courtney Kim
 - ***Bachelor of Language and Technology** in language and technology*
 
 
-# Experiences - Translation and Interpretation
+# Translation and Interpretation Experience
 
 ***Sep 2019*** 
 
@@ -70,7 +70,7 @@ title: About Eunseo Courtney Kim
 - Held spoken tests and measured students' proficiency in English, and dealt with translation tasks within the centre.
 - Communicated with the teachers to deliver comments and feedback from students.
 
-# Experiences - IT
+# Extracurricular Activities - IT
 
 ***Dec 2019 ~ Feb 2020***
 
